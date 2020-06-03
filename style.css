@@ -9,11 +9,9 @@
 
 body {
     color: black;
-    background: linear-gradient(-90deg, #ffffff, #57f5f5, #3eafaf, #1c5050 );
+    background:#57f5f5;
     width: 100%;
-    background-size: 200%, 200%;
-    position: relative;
-    animation: change 14s ease-in-out infinite;
+    
     
     
 }
@@ -42,7 +40,7 @@ nav ul{
 nav ul li{
   display: inline-block;
   line-height: 80px;
-  margin: 0 2px;
+  margin: 0 6px;
 }
 nav ul li a{
   color: #00221b;
@@ -50,7 +48,7 @@ nav ul li a{
   font-size: 18px;
   padding: 7px 10px;
   border-radius: 3px;
-  /* text-transform: uppercase; */
+  text-transform: uppercase; 
   font-family: 'Poppins', sans-serif;
 }
 a.active,a:hover{
@@ -80,6 +78,7 @@ a.active,a:hover{
   justify-content: center;
   margin: auto;
   
+  
 }
 
 .container .card{
@@ -89,8 +88,10 @@ a.active,a:hover{
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   margin: 20px;
+  margin-top: 40px;
   text-align: center;
   transition: all 0.25s;
+  background:#b3ffff;
 }
 
 .container .card:hover{
@@ -104,20 +105,30 @@ a.active,a:hover{
 }
 
 
-.container .card h4{
-  font-weight: 600;
+.container .card h3{
+  font-weight: 300;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+
 }
 
 .container .card p{
   padding: 0 1rem;
   font-size: 16px;
   font-weight: 300;
+  font-family: 'Poppins', sans-serif;
+
 }
 
 .container .card a {
-  font-weight: 500;
+  font-weight: 400;
   text-decoration: none;
-  color: #3498db;
+  color: #00899e;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+
 }
 
 footer {
@@ -140,17 +151,34 @@ footer {
 }
 
 
-
-
-
-
-@media (max-width: 975px){
+@media (max-width: 1135px){
   label.logo{
-        padding-left: 10px;
-        width: 70%;
+        padding-left: 12px;
+        width: 75%;
+  }
+
+  nav label img {
+    margin-top: 10px;
+    max-width: 300px;
+    
+  }
+}
+
+
+
+@media (max-width: 1065px){
+  label.logo{
+        padding-left: 12px;
+        width: 75%;
   }
   nav ul li a{
-    font-size: 15px;
+    font-size: 16px;
+  }
+
+  nav label img {
+    margin-top: 10px;
+    max-width: 240px;
+    
   }
 }
 
@@ -165,7 +193,7 @@ footer {
     position: fixed;
     width: 100%;
     height: 40vh;
-    background: #8eb5dd;
+    background: #abccee;
     top: 80px;
     left: -100%;
     text-align: center;
@@ -177,7 +205,7 @@ footer {
     line-height: 25px;
   }
   nav ul li a{
-    font-size: 17px;
+    font-size: 16px;
   }
   a:hover,a.active{
     background: none;
@@ -188,10 +216,12 @@ footer {
   }
 
   label.logo{
-    
+    width: 60%;
     padding:10px;
     margin-left: 10px;
   }
+
+
 
   nav label img {
     margin-top: 5px;
